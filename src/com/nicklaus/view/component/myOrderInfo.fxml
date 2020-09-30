@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="664.0" prefWidth="1115.0" styleClass="pane-bgColor" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicklaus.controller.MyOrderInfoController">
+   <children>
+      <TableView fx:id="orderTable" layoutX="25.0" layoutY="163.0" prefHeight="476.0" prefWidth="1066.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="61.0" text="序号" />
+          <TableColumn fx:id="orderIdCol" prefWidth="118.0" text="订单编号" />
+            <TableColumn fx:id="productNameCol" prefWidth="111.0" text="产品名称" />
+            <TableColumn fx:id="amountCol" prefWidth="100.0" text="订购数量" />
+            <TableColumn fx:id="endDateCol" prefWidth="127.0" text="交付截至日期" />
+            <TableColumn fx:id="startDateCol" prefWidth="128.0" text="投标截止日期" />
+            <TableColumn fx:id="salemanNickNameCol" prefWidth="95.0" text="收货人" />
+            <TableColumn fx:id="salemanPhoneCol" prefWidth="141.0" text="收货人联系方式" />
+            <TableColumn fx:id="orderStateCol" prefWidth="116.0" text="订单状态" />
+            <TableColumn fx:id="checkBoxCol" prefWidth="64.0" text="操作" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="pushBtn" layoutX="970.0" layoutY="121.0" onAction="#pushAction" styleClass="green-btn" text="发布" />
+      <JFXButton fx:id="removeBtn" layoutX="840.0" layoutY="121.0" onAction="#removeAction" styleClass="red-btn" text="删除" />
+      <JFXButton fx:id="modifyBtn" layoutX="905.0" layoutY="121.0" onAction="#modifyAction" styleClass="orange-btn" text="修改" />
+      <JFXButton fx:id="createBtn" layoutX="775.0" layoutY="121.0" onAction="#createAction" styleClass="blue-btn" text="新建" />
+      <JFXButton fx:id="refreshBtn" layoutX="708.0" layoutY="121.0" onAction="#refreshAction" styleClass="white-btn" text="刷新" />
+      <JFXButton fx:id="finishBtn" layoutX="1035.0" layoutY="121.0" onAction="#finishAction" styleClass="purple-btn" text="完成" />
+   </children>
+</AnchorPane>

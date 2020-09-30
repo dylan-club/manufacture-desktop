@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="744.0" prefWidth="1200.0" style="-fx-background-color: #F0DCA7;" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicklaus.controller.HomeController">
+   <children>
+      <JFXToolbar prefHeight="40.0" prefWidth="1200.0" styleClass="jfx-toolbar">
+         <left>
+            <JFXHamburger fx:id="navbar" styleClass="jfx-hamburger" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <Label prefHeight="40.0" prefWidth="151.0" style="-fx-text-fill: white; -fx-text-alignment: center; -fx-font-weight: bold;" styleClass="card-title" text="东软智能云制造" BorderPane.alignment="CENTER" />
+         </center>
+      </JFXToolbar>
+      <AnchorPane fx:id="holderPane" layoutX="43.0" layoutY="63.0" prefHeight="664.0" prefWidth="1115.0" />
+
+      <JFXDrawer fx:id="sideBar" defaultDrawerSize="200.0" layoutX="-1.0" layoutY="40.0" prefHeight="710.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

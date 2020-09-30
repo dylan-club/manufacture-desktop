@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="603.0" prefWidth="879.0" styleClass="pane-bgColor" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicklaus.controller.CreateOrderCapacityController">
+    <children>
+        <JFXButton fx:id="exitBtn" layoutX="784.0" layoutY="14.0" onAction="#exitAction" styleClass="red-btn" text="x关闭" />
+        <TitledPane animated="false" layoutX="32.0" layoutY="61.0" prefHeight="517.0" prefWidth="816.0" styleClass="orange-titledPane" text="订单排产">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="294.0" prefWidth="814.0">
+                    <children>
+                        <JFXTextField fx:id="orderIdInput" editable="false" labelFloat="true" layoutX="29.0" layoutY="36.0" prefHeight="36.0" prefWidth="315.0" promptText="订单编号" />
+                        <JFXTextField fx:id="productNameInput" editable="false" labelFloat="true" layoutX="451.0" layoutY="36.0" prefHeight="36.0" prefWidth="333.0" promptText="产品名称" />
+                        <TableView fx:id="deviceCapacityTable" layoutX="28.0" layoutY="200.0" prefHeight="265.0" prefWidth="767.0">
+                            <columns>
+                                <TableColumn fx:id="idCol" prefWidth="92.0" text="序号" />
+                                <TableColumn fx:id="orderIdCol" prefWidth="225.0" text="订单编号" />
+                                <TableColumn fx:id="deviceNameCol" prefWidth="111.0" text="设备名称" />
+                                <TableColumn fx:id="startDateCol" prefWidth="115.0" text="开始时间" />
+                                <TableColumn fx:id="endDateCol" prefWidth="133.0" text="结束时间" />
+                                <TableColumn fx:id="checkBoxCol" prefWidth="88.0" text="操作" />
+                            </columns>
+                        </TableView>
+                        <JFXButton fx:id="addBtn" layoutX="728.0" layoutY="159.0" onAction="#addOrderCapacityAction" styleClass="blue-btn" text="+添加" />
+                        <ChoiceBox fx:id="deviceNameInput" layoutX="124.0" layoutY="105.0" prefHeight="36.0" prefWidth="134.0" styleClass="card-unpadded" />
+                        <JFXButton fx:id="removeBtn" layoutX="28.0" layoutY="159.0" onAction="#removeAction" styleClass="red-btn" text="-删除" />
+                        <Label layoutX="28.0" layoutY="111.0" text="设备名称" />
+                  <JFXDatePicker fx:id="startDatePicker" editable="false" layoutX="354.0" layoutY="105.0" prefHeight="36.0" prefWidth="174.0" />
+                  <Label layoutX="272.0" layoutY="111.0" text="开始时间" />
+                  <Label layoutX="538.0" layoutY="111.0" text="结束时间" />
+                  <JFXDatePicker fx:id="endDatePicker" editable="false" layoutX="618.0" layoutY="105.0" prefHeight="36.0" prefWidth="174.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+    </children>
+</AnchorPane>

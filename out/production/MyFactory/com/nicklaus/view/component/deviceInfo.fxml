@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="664.0" prefWidth="1115.0" styleClass="pane-bgColor" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicklaus.controller.DeviceInfoController">
+    <children>
+        <TitledPane animated="false" layoutX="23.0" layoutY="26.0" prefHeight="613.0" prefWidth="1069.0" styleClass="orange-titledPane" text="设备信息管理">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="deviceTable" layoutX="30.0" layoutY="172.0" prefHeight="379.0" prefWidth="1007.0">
+                            <columns>
+                                <TableColumn fx:id="idCol" prefWidth="64.0" text="序号" />
+                                <TableColumn fx:id="deviceIdCol" prefWidth="152.0" text="设备编号" />
+                                <TableColumn fx:id="nameCol" prefWidth="99.0" text="设备名称" />
+                                <TableColumn fx:id="deviceTypeNameCol" prefWidth="107.0" text="设备类型" />
+                                <TableColumn fx:id="deviceSizeCol" prefWidth="104.0" text="设备规格" />
+                                <TableColumn fx:id="deviceDetailCol" prefWidth="106.0" text="设备描述" />
+                        <TableColumn fx:id="deviceStateCol" prefWidth="105.0" text="设备状态" />
+                        <TableColumn fx:id="deviceRentalStateCol" prefWidth="100.0" text="租用状态" />
+                        <TableColumn fx:id="factoryNameCol" prefWidth="107.0" text="所属工厂" />
+                        <TableColumn fx:id="checkBoxCol" prefWidth="62.0" text="操作" />
+                            </columns>
+                        </TableView>
+                        <JFXButton fx:id="removeBtn" layoutX="220.0" layoutY="127.0" onAction="#removeAction" styleClass="red-btn" text="-删除" />
+                        <JFXButton fx:id="modifyBtn" layoutX="983.0" layoutY="127.0" onAction="#modifyAction" styleClass="orange-btn" text="修改" />
+                        <JFXTextField fx:id="nameInput" labelFloat="true" layoutX="30.0" layoutY="33.0" promptText="请输入设备名称" />
+                        <JFXButton fx:id="findBtn" layoutX="265.0" layoutY="34.0" onAction="#findAction" styleClass="white-btn" text="检索" />
+                        <JFXButton fx:id="refreshBtn" layoutX="331.0" layoutY="34.0" onAction="#refreshAction" styleClass="green-btn" text="刷新" />
+                  <JFXButton fx:id="switchStateBtn" layoutX="844.0" layoutY="127.0" onAction="#switchStateAction" styleClass="dark-btn" text="&gt;&lt;远程开关机" />
+                  <JFXButton fx:id="createBtn" layoutX="140.0" layoutY="127.0" onAction="#createAction" styleClass="blue-btn" text="+新建" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+    </children>
+</AnchorPane>

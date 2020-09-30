@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="664.0" prefWidth="1115.0" styleClass="pane-bgColor" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicklaus.controller.ProductTypeInfoController">
+   <children>
+      <TitledPane animated="false" layoutX="51.0" layoutY="39.0" prefHeight="587.0" prefWidth="1013.0" styleClass="orange-titledPane" text="产品类别管理">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="productTypeTable" layoutX="168.0" layoutY="148.0" prefHeight="356.0" prefWidth="675.0">
+                    <columns>
+                      <TableColumn fx:id="idCol" prefWidth="185.0" text="序号" />
+                      <TableColumn fx:id="nameCol" prefWidth="264.0" text="产品类别" />
+                        <TableColumn fx:id="checkBoxCol" prefWidth="225.0" text="操作" />
+                    </columns>
+                  </TableView>
+                  <JFXButton fx:id="openCreatePaneBtn" layoutX="168.0" layoutY="107.0" onAction="#openCreatePaneAction" styleClass="blue-btn" text="+新建" />
+                  <JFXButton fx:id="removeBtn" layoutX="248.0" layoutY="107.0" onAction="#removeAction" styleClass="red-btn" text="-删除" />
+                  <JFXButton fx:id="modifyBtn" layoutX="789.0" layoutY="107.0" onAction="#modifyAction" styleClass="orange-btn" text="修改" />
+                  <JFXTextField fx:id="nameInput" labelFloat="true" layoutX="168.0" layoutY="36.0" promptText="请输入类别名称" />
+                  <JFXButton fx:id="searchBtn" layoutX="401.0" layoutY="36.0" onAction="#searchAction" styleClass="white-btn" text="检索" />
+                  <JFXButton fx:id="refreshBtn" layoutX="464.0" layoutY="36.0" onAction="#refreshAction" styleClass="green-btn" text="刷新" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

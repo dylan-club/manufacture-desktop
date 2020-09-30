@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="664.0" prefWidth="1115.0" styleClass="pane-bgColor" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicklaus.controller.UserInfoController">
+   <children>
+      <TitledPane animated="false" layoutX="43.0" layoutY="30.0" prefHeight="604.0" prefWidth="1029.0" styleClass="orange-titledPane" text="用户信息列表">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="userTable" layoutX="108.0" layoutY="200.0" prefHeight="340.0" prefWidth="811.0">
+                    <columns>
+                      <TableColumn fx:id="idCol" prefWidth="75.0" text="序号" />
+                      <TableColumn fx:id="usernameCol" prefWidth="133.0" text="登录账号" />
+                        <TableColumn fx:id="nameCol" prefWidth="137.0" text="姓名" />
+                        <TableColumn fx:id="phoneCol" minWidth="0.0" prefWidth="155.0" text="联系方式" />
+                        <TableColumn fx:id="powerCol" minWidth="0.0" prefWidth="125.0" text="角色名称" />
+                        <TableColumn fx:id="checkBoxCol" minWidth="2.0" prefWidth="185.0" text="选择" />
+                    </columns>
+                  </TableView>
+                  <JFXButton fx:id="openCreatePaneBtn" layoutX="108.0" layoutY="154.0" onAction="#openCreatePaneAction" styleClass="blue-btn" text="+新建" />
+                  <JFXButton fx:id="findByNameBtn" layoutX="353.0" layoutY="39.0" onAction="#findByNameAction" styleClass="white-btn" text="检索" />
+                  <JFXButton fx:id="removeUsersBtn" layoutX="185.0" layoutY="153.0" onAction="#removeUsersAction" styleClass="red-btn" text="-删除" />
+                  <JFXTextField fx:id="searchNameInput" labelFloat="true" layoutX="109.0" layoutY="37.0" promptText="请输入真实姓名" />
+                  <JFXButton fx:id="resetBtn" layoutX="420.0" layoutY="39.0" onAction="#resetTableAction" styleClass="green-btn" text="刷新" />
+                  <JFXButton fx:id="createModifyPaneBtn" layoutX="865.0" layoutY="153.0" onAction="#createModifyPaneAction" styleClass="orange-btn" text="修改" />
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font name="Microsoft YaHei Light" size="18.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

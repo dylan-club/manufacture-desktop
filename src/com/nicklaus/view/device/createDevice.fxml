@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="555.0" prefWidth="699.0" styleClass="pane-bgColor" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicklaus.controller.CreateDeviceController">
+    <children>
+        <Label layoutX="198.0" layoutY="138.0" prefHeight="33.0" prefWidth="93.0" text="设备名称：">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="nameInput" layoutX="306.0" layoutY="140.0" />
+        <Label layoutX="198.0" layoutY="204.0" prefHeight="33.0" prefWidth="93.0" text="设备类别：">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="198.0" layoutY="261.0" prefHeight="33.0" prefWidth="93.0" text="设备规格：">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="deviceSizeInput" layoutX="306.0" layoutY="261.0" />
+        <Label layoutX="198.0" layoutY="319.0" prefHeight="33.0" prefWidth="93.0" text="设备描述：">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="deviceDetailInput" layoutX="306.0" layoutY="319.0" />
+        <JFXButton fx:id="createDeviceBtn" layoutX="291.0" layoutY="406.0" onAction="#createDeviceAction" prefHeight="34.0" prefWidth="117.0" styleClass="blue-btn" text="添加设备" />
+        <JFXButton fx:id="exitBtn" layoutX="612.0" layoutY="14.0" onAction="#exitAction" styleClass="red-btn" text="X关闭" />
+        <ChoiceBox fx:id="deviceTypeNameInput" layoutX="306.0" layoutY="206.0" prefHeight="30.0" prefWidth="184.0" styleClass="card-unpadded" />
+    </children>
+</AnchorPane>

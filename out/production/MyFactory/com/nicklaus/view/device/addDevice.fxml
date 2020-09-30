@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="481.0" prefWidth="863.0" styleClass="pane-bgColor" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicklaus.controller.AddDeviceController">
+    <children>
+        <JFXButton fx:id="exitBtn" layoutX="785.0" layoutY="14.0" onAction="#exitAction" styleClass="red-btn" text="x关闭" />
+      <TableView fx:id="deviceTable" layoutX="80.0" layoutY="118.0" prefHeight="323.0" prefWidth="704.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="序号" />
+          <TableColumn fx:id="deviceIdCol" prefWidth="91.0" text="设备编号" />
+            <TableColumn fx:id="nameCol" prefWidth="94.0" text="设备名称" />
+            <TableColumn fx:id="deviceTypeNameCol" prefWidth="100.0" text="设备类型" />
+            <TableColumn fx:id="deviceSizeCol" prefWidth="97.0" text="设备规格" />
+            <TableColumn fx:id="deviceDetailCol" prefWidth="90.0" text="设备描述" />
+            <TableColumn fx:id="deviceStateCol" prefWidth="89.0" text="设备状态" />
+            <TableColumn fx:id="checkBoxCol" prefWidth="67.0" text="操作" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="addDeviceBtn" layoutX="80.0" layoutY="68.0" onAction="#addDeviceAction" styleClass="green-btn" text="租用" />
+    </children>
+</AnchorPane>

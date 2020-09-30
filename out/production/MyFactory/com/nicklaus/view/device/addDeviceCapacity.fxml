@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="603.0" prefWidth="879.0" styleClass="pane-bgColor" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicklaus.controller.AddDeviceCapacityController">
+    <children>
+        <JFXButton fx:id="exitBtn" layoutX="784.0" layoutY="14.0" onAction="#exitAction" styleClass="red-btn" text="x关闭" />
+      <TitledPane animated="false" layoutX="32.0" layoutY="61.0" prefHeight="517.0" prefWidth="816.0" styleClass="orange-titledPane" text="添加产品产能信息">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="294.0" prefWidth="814.0">
+               <children>
+                  <JFXTextField fx:id="deviceIdInput" labelFloat="true" layoutX="124.0" layoutY="36.0" promptText="设备编号" />
+                  <JFXTextField fx:id="deviceNameInput" labelFloat="true" layoutX="451.0" layoutY="36.0" promptText="设备名称" />
+                  <JFXTextField fx:id="amountInput" labelFloat="true" layoutX="451.0" layoutY="105.0" promptText="产品产能(件/小时)" />
+                  <TableView fx:id="deviceCapacityTable" layoutX="106.0" layoutY="202.0" prefHeight="261.0" prefWidth="584.0">
+                    <columns>
+                      <TableColumn fx:id="idCol" prefWidth="92.0" text="序号" />
+                      <TableColumn fx:id="deviceNameCol" prefWidth="133.0" text="设备名称" />
+                        <TableColumn fx:id="productNameCol" prefWidth="131.0" text="产品名称" />
+                        <TableColumn fx:id="amountCol" prefWidth="154.0" text="产品产能(件/小时)" />
+                        <TableColumn fx:id="checkBoxCol" prefWidth="69.0" text="操作" />
+                    </columns>
+                  </TableView>
+                  <JFXButton fx:id="addBtn" layoutX="623.0" layoutY="159.0" onAction="#addDeviceCapacityAction" styleClass="blue-btn" text="+添加" />
+                  <ChoiceBox fx:id="productNameInput" layoutX="210.0" layoutY="105.0" prefHeight="36.0" prefWidth="134.0" styleClass="card-unpadded" />
+                  <JFXButton fx:id="removeBtn" layoutX="106.0" layoutY="159.0" onAction="#removeAction" styleClass="red-btn" text="-删除" />
+                  <Label layoutX="124.0" layoutY="111.0" text="产品名称" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+    </children>
+</AnchorPane>

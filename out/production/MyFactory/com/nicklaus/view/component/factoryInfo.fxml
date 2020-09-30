@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="664.0" prefWidth="1115.0" styleClass="pane-bgColor" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicklaus.controller.FactoryInfoController">
+    <children>
+        <TitledPane animated="false" layoutX="43.0" layoutY="30.0" prefHeight="604.0" prefWidth="1029.0" styleClass="orange-titledPane" text="云工厂信息列表">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="userTable" layoutX="108.0" layoutY="200.0" prefHeight="340.0" prefWidth="811.0">
+                            <columns>
+                                <TableColumn fx:id="idCol" prefWidth="75.0" text="序号" />
+                                <TableColumn fx:id="factoryNameCol" prefWidth="100.0" text="工厂名称" />
+                                <TableColumn fx:id="detailCol" prefWidth="114.0" text="工厂简介" />
+                                <TableColumn fx:id="nameCol" minWidth="0.0" prefWidth="96.0" text="负责人" />
+                                <TableColumn fx:id="phoneCol" minWidth="0.0" prefWidth="132.0" text="联系方式" />
+                                <TableColumn fx:id="usernameCol" minWidth="2.0" prefWidth="122.0" text="登录账号" />
+                        <TableColumn fx:id="stateCol" prefWidth="104.0" text="工厂状态" />
+                        <TableColumn fx:id="checkBoxCol" prefWidth="67.0" text="操作" />
+                            </columns>
+                        </TableView>
+                        <JFXButton fx:id="switchStateBtn" layoutX="108.0" layoutY="154.0" onAction="#switchStateAction" styleClass="blue-btn" text="&gt;&lt;切换工厂状态" />
+                        <JFXButton fx:id="findByFactoryNameBtn" layoutX="353.0" layoutY="39.0" onAction="#findByFactoryNameAction" styleClass="white-btn" text="检索" />
+                        <JFXTextField fx:id="searchFactoryNameInput" labelFloat="true" layoutX="109.0" layoutY="37.0" promptText="请输入工厂名称" />
+                        <JFXButton fx:id="resetBtn" layoutX="420.0" layoutY="39.0" onAction="#resetAction" styleClass="green-btn" text="刷新" />
+                    </children>
+                </AnchorPane>
+            </content>
+            <font>
+                <Font name="Microsoft YaHei Light" size="18.0" />
+            </font>
+        </TitledPane>
+    </children>
+</AnchorPane>

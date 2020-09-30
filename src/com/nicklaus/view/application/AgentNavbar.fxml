@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.effect.Shadow?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="200.0" style="-fx-background-color: #F0DCA7;" styleClass="card-subtitle" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="285.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../resources/imgs/navbar.jpg" />
+            </image>
+        </ImageView>
+        <JFXButton prefHeight="34.0" prefWidth="210.0" accessibleText="startMenu" styleClass="drawer-buttons" text="主页" />
+        <JFXButton prefHeight="34.0" prefWidth="217.0" accessibleText="myOrderInfoMenu" styleClass="drawer-buttons" text="我的订单" />
+
+
+        <!--      <JFXButton prefHeight="34.0" prefWidth="210.0" accessibleText="startMenu" styleClass="drawer-buttons" text="主页" />-->
+        <!--      <JFXButton prefHeight="34.0" prefWidth="217.0" accessibleText="userInfoMenu" styleClass="drawer-buttons" text="用户管理" />-->
+        <!--      <JFXButton prefHeight="34.0" prefWidth="207.0" accessibleText="productInfoMenu" styleClass="drawer-buttons" text="产品管理" />-->
+        <!--      <JFXButton prefHeight="34.0" prefWidth="222.0" accessibleText="deviceInfoMenu" styleClass="drawer-buttons" text="设备管理" />-->
+        <!--      <JFXButton prefHeight="34.0" prefWidth="234.0" accessibleText="factoryInfoMenu" styleClass="drawer-buttons" text="工厂管理" />-->
+        <!--      <JFXButton prefHeight="34.0" prefWidth="218.0" accessibleText="orderInfoMenu" styleClass="drawer-buttons" text="订单管理" />-->
+
+    </children>
+
+
+</VBox>

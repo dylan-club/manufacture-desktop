@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="555.0" prefWidth="699.0" styleClass="pane-bgColor" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicklaus.controller.RegistrationController">
+   <children>
+      <Label layoutX="218.0" layoutY="84.0" prefHeight="33.0" prefWidth="74.0" text="用户名：">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="usernameInput" layoutX="306.0" layoutY="77.0" />
+      <Label layoutX="226.0" layoutY="137.0" prefHeight="33.0" prefWidth="59.0" text="密码：">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="passwordInput" layoutX="306.0" layoutY="131.0" />
+      <Label layoutX="226.0" layoutY="191.0" prefHeight="33.0" prefWidth="59.0" text="姓名：">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nameInput" layoutX="306.0" layoutY="184.0" />
+      <Label layoutX="209.0" layoutY="243.0" prefHeight="33.0" prefWidth="93.0" text="联系方式：">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="phoneInput" layoutX="306.0" layoutY="236.0" />
+      <Label layoutX="209.0" layoutY="294.0" prefHeight="33.0" prefWidth="93.0" text="注册方式：">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="factoryRadio" layoutX="306.0" layoutY="301.0" onAction="#enableInputAction" text="云工厂" />
+      <JFXRadioButton fx:id="salemanRadio" layoutX="398.0" layoutY="301.0" onAction="#disableInputAction" text="经销商" />
+      <Label layoutX="209.0" layoutY="341.0" prefHeight="33.0" prefWidth="93.0" text="工厂名称：">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="factoryNameInput" layoutX="306.0" layoutY="335.0" />
+      <Label layoutX="209.0" layoutY="388.0" prefHeight="33.0" prefWidth="93.0" text="工厂描述：">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="factoryDetailInput" layoutX="306.0" layoutY="382.0" />
+      <JFXButton fx:id="registerBtn" layoutX="291.0" layoutY="458.0" onAction="#registerAction" prefHeight="34.0" prefWidth="117.0" styleClass="blue-btn" text="注册" />
+      <JFXButton fx:id="backToLoginBtn" layoutX="612.0" layoutY="14.0" onAction="#backToLoginAction" styleClass="orange-btn" text="返回&gt;&gt;" />
+   </children>
+</AnchorPane>

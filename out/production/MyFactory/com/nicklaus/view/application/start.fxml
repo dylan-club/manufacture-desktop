@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import com.jfoenix.controls.pannable.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="664.0" prefWidth="1115.0" styleClass="pane-bgColor" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicklaus.controller.StartController">
+   <children>
+      <AnchorPane layoutX="83.0" layoutY="46.0" prefHeight="298.0" prefWidth="459.0" styleClass="pane-orange">
+         <children>
+            <Line endX="300.0" layoutX="129.0" layoutY="94.0" startX="-100.0" strokeWidth="0.5" />
+            <Text fontSmoothingType="LCD" layoutX="29.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="东软智能制造云平台，以“工业 4.0”和“互联网+”理念为框架，智能数控设备为基础，高端工业服务为途径，整合广泛社会资源，接入数控产业领域的优势企业，将数控设备生产商及用户纳入网络化协同制造的生态圈，打造面向制造业全产业链开放的工业互联网平台。" wrappingWidth="401.0">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="18.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="97.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="panel-info" text="东软智能制造云平台系统">
+               <font>
+                  <Font name="Microsoft YaHei" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="659.0" layoutY="46.0" prefHeight="506.0" prefWidth="380.0" styleClass="pane-bgColor">
+         <children>
+            <Pane layoutX="153.0" layoutY="26.0" prefHeight="200.0" prefWidth="200.0" styleClass="pane-bgColor">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/imgs/user-info.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label fx:id="usernameLabel" layoutX="39.0" layoutY="92.0" text="用户名">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="160.0" text="欢迎您！">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="24.0" />
+               </font>
+            </Label>
+            <Line endX="220.0" layoutX="128.0" layoutY="266.0" startX="-100.0" strokeMiterLimit="8.0" />
+            <Label fx:id="userInfoLabel" layoutX="64.0" layoutY="310.0" prefHeight="94.0" prefWidth="284.0" text="用户基本信息详情" textAlignment="CENTER">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="23.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="exitBtn" layoutX="34.0" layoutY="39.0" onAction="#exitAction" prefHeight="32.0" prefWidth="82.0" styleClass="dark-btn" text="退出">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="15.0" />
+               </font></JFXButton>
+            <Label layoutX="143.0" layoutY="283.0" text="用户基本信息">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="15.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="83.0" layoutY="450.0" prefHeight="81.0" prefWidth="459.0" styleClass="pane-bgColor">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="459.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/imgs/banner.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

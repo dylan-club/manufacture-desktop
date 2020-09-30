@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="567.0" prefWidth="764.0" style="-fx-background-color: #f8f8f8;" stylesheets="@../../resources/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicklaus.controller.LoginController">
+   <children>
+      <ImageView fitHeight="153.0" fitWidth="211.0" layoutX="306.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/imgs/login.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="159.0" layoutY="227.0" prefHeight="113.0" prefWidth="447.0" spacing="25.0">
+         <children>
+            <JFXTextField fx:id="usernameInput" labelFloat="true" prefHeight="38.0" prefWidth="432.0" promptText="请输入用户名">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="15.0" />
+               </font></JFXTextField>
+            <JFXPasswordField fx:id="passwordInput" labelFloat="true" prefHeight="38.0" prefWidth="427.0" promptText="请输入密码">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="15.0" />
+               </font></JFXPasswordField>
+         </children>
+      </VBox>
+      <JFXButton fx:id="loginBtn" buttonType="RAISED" layoutX="322.0" layoutY="397.0" onAction="#loginAction" prefHeight="34.0" prefWidth="122.0" styleClass="orange-btn" text="登录">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXSpinner fx:id="loginSpinner" layoutX="357.0" layoutY="461.0" />
+      <Hyperlink fx:id="registerLink" layoutX="423.0" layoutY="340.0" onAction="#goToRegisterPaneAction" text="没有账户？立即注册">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>
